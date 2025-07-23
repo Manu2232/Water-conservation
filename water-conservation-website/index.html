@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Conservation - Save Every Drop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Save Every Drop</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#importance">Importance</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#tips">Conservation Tips</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Water Conservation Matters</h15>
+            <p>Every drop counts in preserving our most precious resource</p>
+        </section>
+
+        <section id="importance" class="content-section">
+            <h2>Why Water Matters</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Essential for Life</h3>
+                    <p>Water is vital for human survival, agriculture, and ecosystems.</p>
+                </div>
+                <div class="card">
+                    <h3>Economic Impact</h3>
+                    <p>$260 billion is lost globally each year due to lack of basic water and sanitation.</p>
+                </div>
+                <div class="card">
+                    <h3>Climate Change</h3>
+                    <p>Water scarcity is exacerbated by climate change.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="statistics" class="content-section">
+            <h2>Water Waste Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>30%</h3>
+                    <p>Water wasted in homes through leaks and inefficient fixtures</p>
+                </div>
+                <div class="stat-card">
+                    <h3>70%</h3>
+                    <p>Water used for agriculture globally</p>
+                </div>
+                <div class="stat-card">
+                    <h3>20%</h3>
+                    <p>Water savings possible with efficient fixtures</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="content-section">
+            <h2>Conservation Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>Fix Leaks</h3>
+                    <p>Fixing a leaky faucet can save 3,000 gallons per year.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Smart Gardening</h3>
+                    <p>Use drought-resistant plants and water-efficient irrigation.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Shorter Showers</h3>
+                    <p>Reduce shower time by 2 minutes to save 1,750 gallons annually.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Water-Efficient Appliances</h3>
+                    <p>Choose WaterSense labeled products for significant savings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/jay.JPG"  width="800" height="600"  alt= "About Us">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>We are dedicated to raising awareness about water conservation and providing practical solutions to help individuals and communities save water.</p>
+                </div>
+              
+        </section>
+
+        <!-- Water Usage Calculator -->
+        <section id="calculator" class="content-section">
+            <h2>Water Usage Calculator</h2>
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="shower-time">Average Shower Time (minutes):</label>
+                        <input type="number" id="shower-time" min="0" max="60" value="5" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="toilet-flushes">Daily Toilet Flushes:</label>
+                        <input type="number" id="toilet-flushes" min="0" max="20" value="5" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="dish-washes">Weekly Dish Washes:</label>
+                        <input type="number" id="dish-washes" min="0" max="10" value="2" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="laundry-loads">Weekly Laundry Loads:</label>
+                        <input type="number" id="laundry-loads" min="0" max="10" value="3" required>
+                    </div>
+                </div>
+                <button onclick="calculateWaterUsage()">Calculate Usage</button>
+                <div id="water-usage-result"></div>
+            </div>
+        </section>
+
+        <!-- Water Conservation Quiz -->
+        <section id="quiz" class="content-section">
+            <h2>Water Conservation Quiz</h2>
+            <div id="quiz-container">
+                <div class="quiz-content">
+                    <div id="quiz-question"></div>
+                    <div id="quiz-options"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Downloadable Resources -->
+        <section id="resources" class="content-section">
+            <h2>Downloadable Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Water Conservation Guide</h3>
+                    <p>Download our comprehensive guide to water conservation at home.</p>
+                    <button id="download-resources">Download Guide</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Water Audit Checklist</h3>
+                    <p>Use this checklist to identify water-saving opportunities in your home.</p>
+                    <button id="download-checklist">Download Checklist</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Water-Efficient Gardening Guide</h3>
+                    <p>Learn how to maintain a beautiful garden while saving water.</p>
+                    <button id="download-gardening">Download Guide</button>
+                </div>
+                <div class="resource-card">
+                    <h3>School Water Conservation Program</h3>
+                    <p>Implement a water conservation program in your school.</p>
+                    <button id="download-school">Download Program</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Water Saving Infographic</h3>
+                    <p>Visual guide to water conservation tips for your home.</p>
+                    <button id="download-infographic">Download Infographic</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="content-section">
+            <h2>Real Stories of Water Conservation</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <h3>"Saving Water, Saving Money"</h3>
+                        <p>"After implementing the water-saving tips from this website, our family reduced our water bill by 30% in just one month! The shower timer and leak detection guide were especially helpful."</p>
+                        <div class="testimonial-author">
+                            <img src="images/Angel.jpg" alt="Testimonial author">
+                            <div>
+                                <h4>Angel Kissiwa</h4>
+                                <span>Neurosurgeon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <h3>"Making a Difference at the bank"</h3>
+                        <p>"The bank water conservation club used the resources from this website to create a successful awareness campaign. We've seen a significant reduction in water usage across all departments!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/Kwame.jpg" alt="Testimonial author">
+                            <div>
+                                <h4>Derrick Twum</h4>
+                                <span>Banker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <h3>"Gardening with Less Water"</h3>
+                        <p>"The water-efficient gardening guide transformed my approach to gardening. My plants are thriving with much less water usage!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/Nhyira.jpg" alt="Testimonial author">
+                            <div>
+                                <h4>Nhyira Ampadu</h4>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Basic 6 Initiative. All rights reserved.</p>
+    </footer>
+</body>
+</html>
